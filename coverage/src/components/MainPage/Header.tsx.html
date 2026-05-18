@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Code coverage report for src/fetchData.ts</title>
+    <title>Code coverage report for src/components/MainPage/Header.tsx</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../prettify.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type="text/css">
       .coverage-summary .sorter {
-        background-image: url(../sort-arrow-sprite.png);
+        background-image: url(../../../sort-arrow-sprite.png);
       }
     </style>
   </head>
@@ -18,32 +18,32 @@
     <div class="wrapper">
       <div class="pad1">
         <h1>
-          <a href="../index.html">All files</a> /
-          <a href="index.html">src</a> fetchData.ts
+          <a href="../../../index.html">All files</a> /
+          <a href="index.html">src/components/MainPage</a> Header.tsx
         </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
-            <span class="strong">100% </span>
+            <span class="strong">84.21% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">9/9</span>
+            <span class="fraction">16/19</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">100% </span>
+            <span class="strong">64.28% </span>
             <span class="quiet">Branches</span>
-            <span class="fraction">2/2</span>
+            <span class="fraction">9/14</span>
           </div>
 
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
             <span class="quiet">Functions</span>
-            <span class="fraction">5/5</span>
+            <span class="fraction">1/1</span>
           </div>
 
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">7/7</span>
+            <span class="fraction">9/9</span>
           </div>
         </div>
         <p class="quiet">
@@ -84,62 +84,56 @@
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">23x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">23x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">23x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import type { ItemProps } from './interfaces/ItemProps';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import type { HeaderProps } from '../../interfaces/HeaderProps';
+import { Search } from '../Search';
+import { Link } from 'react-router-dom';
 &nbsp;
-export const fetchDataCharacters = async (
-  item: string
-): Promise&lt;ItemProps[]&gt; =&gt; {
-  await new Promise((resolve) =&gt; setTimeout(resolve, 500));
-  const res = await fetch(`https://swapi.info/api/people`).then((res) =&gt;
-    res.json()
+const Header = ({ handleSearch, isLoading, triggerErr }: HeaderProps) =&gt; {
+  return (
+    &lt;header className="w-full p-4 bg-[#131212] shadow-[0_10px_15px_-3px_rgba(0,0,0,0.5)] text-white flex items-center justify-between"&gt;
+      &lt;h1 className="text-[35px]"&gt;Star wars&lt;/h1&gt;<span class="branch-1 cbranch-no" title="branch not covered" ></span>
+      &lt;Search onSearch={handleSearch} isLoading={isLoading} /&gt;<span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="else path not taken" >E</span></span>
+      &lt;div className="flex gap-3 items-center justify-center"&gt;
+        &lt;Link to="/about" className="text-xl"&gt;
+          About
+        &lt;/Link&gt;
+        &lt;button
+          className="bg-white min-w-20 cursor-pointer rounded-[5px] text-black p-1"
+          onClick={triggerErr}
+        &gt;
+          Error button
+        &lt;/button&gt;
+      &lt;/div&gt;<span class="cstat-no" title="statement not covered" ><span class="branch-1 cbranch-no" title="branch not covered" ><span class="missing-if-branch" title="else path not taken" >E</span></span></span>
+    &lt;/header&gt;<span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="else path not taken" >E</span></span>
   );
-  const filteredCharacters = item
-    ? res.filter((char: ItemProps) =&gt;
-        char.name.toLowerCase().includes(item.toLowerCase())
-      )
-    : res;
-  return filteredCharacters.map((character: ItemProps) =&gt; ({
-    id: character.name,
-    name: character.name,
-    height: character.height,
-    mass: character.mass,
-    hair_color: character.hair_color,
-    skin_color: character.skin_color,
-    eye_color: character.eye_color,
-    birth_year: character.birth_year,
-    gender: character.gender,
-    url: character.url,
-  }));
 };
+&nbsp;
+export default Header;
 &nbsp;</pre></td></tr></table></pre>
 
       <div class="push"></div>
@@ -156,13 +150,13 @@ export const fetchDataCharacters = async (
       >
       at 2026-05-18T22:02:13.542Z
     </div>
-    <script src="../prettify.js"></script>
+    <script src="../../../prettify.js"></script>
     <script>
       window.onload = function () {
         prettyPrint();
       };
     </script>
-    <script src="../sorter.js"></script>
-    <script src="../block-navigation.js"></script>
+    <script src="../../../sorter.js"></script>
+    <script src="../../../block-navigation.js"></script>
   </body>
 </html>

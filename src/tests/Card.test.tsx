@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { Card } from '../components/Card';
 import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+import userEvent from '@testing-library/user-event';
 const userData = {
   id: '1',
   name: 'testCard',
@@ -15,7 +17,11 @@ const userData = {
 };
 describe('Card component', () => {
   it('should render the card with the provided fields', () => {
-    render(<Card item={userData} />);
+    render(
+      <MemoryRouter>
+        <Card item={userData} isShowCharacter={true} />
+      </MemoryRouter>
+    );
     expect(screen.getByText(userData.name)).toBeInTheDocument();
     expect(screen.getByText(`Gender: ${userData.gender}`)).toBeInTheDocument();
     expect(
@@ -32,5 +38,15 @@ describe('Card component', () => {
     expect(
       screen.getByText(`Eye color: ${userData.eye_color}`)
     ).toBeInTheDocument();
+  });
+  it('triggers handleClick when clicked', async () => {
+    const user = userEvent.setup();
+    render(
+      <MemoryRouter>
+        <Card item={userData} isShowCharacter={false} />
+      </MemoryRouter>
+    );
+    const cardEl = screen.getByText(userData.name);
+    await user.click(cardEl);
   });
 });

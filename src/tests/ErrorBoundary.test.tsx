@@ -2,9 +2,25 @@ import { render, screen } from '@testing-library/react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { ErrorBoundary } from '../components/ErrorBoundary';
 import userEvent from '@testing-library/user-event';
-import App from '../App';
+import { useState } from 'react';
+
 const ErrComponent = () => {
   throw new Error('Test exception');
+};
+const ErrBtn = () => {
+  const [isShowErr, setIsShowErr] = useState(false);
+  if (isShowErr) {
+    throw new Error('Test exception');
+  }
+  return (
+    <button
+      onClick={() => {
+        setIsShowErr(true);
+      }}
+    >
+      Error Button
+    </button>
+  );
 };
 describe('Error Boundary Tests', () => {
   beforeEach(() => vi.spyOn(console, 'error').mockImplementation(() => {}));
@@ -34,7 +50,7 @@ describe('Error Boundary Tests', () => {
     it('throws error when test button is clicked and triggers error boundary fallback UI', async () => {
       render(
         <ErrorBoundary>
-          <App />
+          <ErrBtn />
         </ErrorBoundary>
       );
       const errBtn = screen.getByRole('button', { name: /error button/i });
@@ -43,24 +59,25 @@ describe('Error Boundary Tests', () => {
     });
   });
   describe('ReloadButton component', () => {
-  it('should call window.location.reload when button is clicked', async() => {
-   
-    const originalLocation = window.location;
-    Object.defineProperty(window, 'location', {
-      value: { reload: vi.fn() }
-    });
-    render(<ErrorBoundary>
-      <App/>
-      </ErrorBoundary>);
-    const errBtn = screen.getByRole('button', { name: /error button/i });
+    it('should call window.location.reload when button is clicked', async () => {
+      const originalLocation = window.location;
+      Object.defineProperty(window, 'location', {
+        value: { reload: vi.fn() },
+      });
+      render(
+        <ErrorBoundary>
+          <ErrBtn />
+        </ErrorBoundary>
+      );
+      const errBtn = screen.getByRole('button', { name: /error button/i });
       await user.click(errBtn);
-    const reloadBtn = screen.getByRole('button', { name: /reload page/i });
+      const reloadBtn = screen.getByRole('button', { name: /reload page/i });
       await user.click(reloadBtn);
-    expect(window.location.reload).toHaveBeenCalled();
-    Object.defineProperty(window, 'location', {
-      configurable: true,
-      value: originalLocation,
+      expect(window.location.reload).toHaveBeenCalled();
+      Object.defineProperty(window, 'location', {
+        configurable: true,
+        value: originalLocation,
+      });
     });
   });
-});
 });

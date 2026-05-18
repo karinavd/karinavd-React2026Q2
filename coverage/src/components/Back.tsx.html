@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Code coverage report for src/components/CardList.tsx</title>
+    <title>Code coverage report for src/components/Back.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,31 +19,31 @@
       <div class="pad1">
         <h1>
           <a href="../../index.html">All files</a> /
-          <a href="index.html">src/components</a> CardList.tsx
+          <a href="index.html">src/components</a> Back.tsx
         </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
-            <span class="strong">84.61% </span>
+            <span class="strong">83.33% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">22/26</span>
+            <span class="fraction">5/6</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">75% </span>
+            <span class="strong">50% </span>
             <span class="quiet">Branches</span>
-            <span class="fraction">12/16</span>
+            <span class="fraction">1/2</span>
           </div>
 
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
             <span class="quiet">Functions</span>
-            <span class="fraction">2/2</span>
+            <span class="fraction">1/1</span>
           </div>
 
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">8/8</span>
+            <span class="fraction">3/3</span>
           </div>
         </div>
         <p class="quiet">
@@ -69,44 +69,26 @@
 <a name='L8'></a><a href='#L8'>8</a>
 <a name='L9'></a><a href='#L9'>9</a>
 <a name='L10'></a><a href='#L10'>10</a>
-<a name='L11'></a><a href='#L11'>11</a>
-<a name='L12'></a><a href='#L12'>12</a>
-<a name='L13'></a><a href='#L13'>13</a>
-<a name='L14'></a><a href='#L14'>14</a>
-<a name='L15'></a><a href='#L15'>15</a>
-<a name='L16'></a><a href='#L16'>16</a>
-<a name='L17'></a><a href='#L17'>17</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L11'></a><a href='#L11'>11</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">27x</span>
-<span class="cline-any cline-yes">27x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import type { CardListProps } from '../interfaces/CardListProps';
-import { Card } from './Card';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Link } from 'react-router-dom';
 &nbsp;
-export const CardList = ({ items, isLoading, error }: CardListProps) =&gt; {
-  if (error) return &lt;div&gt;Error: {error}&lt;/div&gt;<span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="else path not taken" >E</span>;</span>
-  if (isLoading) return &lt;div&gt;Loading...&lt;/div&gt;;
-  if (items.length === 0) return &lt;div&gt;Not found&lt;/div&gt;<span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="else path not taken" >E</span>;</span>
+const Back = () =&gt; (
+    &lt;Link to="/" className="text-2xl rounded cursor-pointer transition-colors"&gt;
+      Back
+    &lt;/Link&gt;<span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="else path not taken" >E</span></span>
 &nbsp;
-  return (
-    &lt;div className="p-5 grid grid-cols-3 gap-5 w-full"&gt;
-      {items.map((x) =&gt; (
-        &lt;Card key={x.id} item={x} isShowCharacter={false} /&gt;
-      ))<span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="else path not taken" >E</span>}</span>
-    &lt;/div&gt;<span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="else path not taken" >E</span></span>
-  );
-};
+);
+&nbsp;
+export default Back;
 &nbsp;</pre></td></tr></table></pre>
 
       <div class="push"></div>

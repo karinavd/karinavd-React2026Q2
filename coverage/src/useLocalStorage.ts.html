@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Code coverage report for src/fetchData.ts</title>
+    <title>Code coverage report for src/useLocalStorage.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,13 +19,13 @@
       <div class="pad1">
         <h1>
           <a href="../index.html">All files</a> /
-          <a href="index.html">src</a> fetchData.ts
+          <a href="index.html">src</a> useLocalStorage.ts
         </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
-            <span class="strong">100% </span>
+            <span class="strong">76.92% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">9/9</span>
+            <span class="fraction">10/13</span>
           </div>
 
           <div class="fl pad1y space-right2">
@@ -37,13 +37,13 @@
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
             <span class="quiet">Functions</span>
-            <span class="fraction">5/5</span>
+            <span class="fraction">3/3</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">100% </span>
+            <span class="strong">76.92% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">7/7</span>
+            <span class="fraction">10/13</span>
           </div>
         </div>
         <p class="quiet">
@@ -57,7 +57,7 @@
           </div>
         </template>
       </div>
-      <div class="status-line high"></div>
+      <div class="status-line medium"></div>
       <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -88,57 +88,57 @@
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">69x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">69x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">69x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import type { ItemProps } from './interfaces/ItemProps';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useState } from 'react';
 &nbsp;
-export const fetchDataCharacters = async (
-  item: string
-): Promise&lt;ItemProps[]&gt; =&gt; {
-  await new Promise((resolve) =&gt; setTimeout(resolve, 500));
-  const res = await fetch(`https://swapi.info/api/people`).then((res) =&gt;
-    res.json()
-  );
-  const filteredCharacters = item
-    ? res.filter((char: ItemProps) =&gt;
-        char.name.toLowerCase().includes(item.toLowerCase())
-      )
-    : res;
-  return filteredCharacters.map((character: ItemProps) =&gt; ({
-    id: character.name,
-    name: character.name,
-    height: character.height,
-    mass: character.mass,
-    hair_color: character.hair_color,
-    skin_color: character.skin_color,
-    eye_color: character.eye_color,
-    birth_year: character.birth_year,
-    gender: character.gender,
-    url: character.url,
-  }));
+export const useLocalStorage = &lt;T&gt;(
+  key: string,
+  defaultValue: T
+): [T, (newValue: T) =&gt; void] =&gt; {
+  const [storedValue, setStoredValue] = useState&lt;T&gt;(() =&gt; {
+    try {
+      const value = window.localStorage.getItem(key);
+      return value ? JSON.parse(value) : defaultValue;
+    } catch (err) {
+<span class="cstat-no" title="statement not covered" >      console.error(err);</span>
+<span class="cstat-no" title="statement not covered" >      return defaultValue;</span>
+    }
+  });
+&nbsp;
+  const setValue = (newValue: T) =&gt; {
+    try {
+      window.localStorage.setItem(key, JSON.stringify(newValue));
+    } catch (err) {
+<span class="cstat-no" title="statement not covered" >      console.error(err);</span>
+    }
+    setStoredValue(newValue);
+  };
+&nbsp;
+  return [storedValue, setValue];
 };
 &nbsp;</pre></td></tr></table></pre>
 
