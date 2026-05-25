@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Card } from './Card';
 import type { ItemProps } from '../interfaces/ItemProps';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import ButtonComponent from './FlyoutButton';
+import useOutsideClick from '../OutSideClick';
 
 const DetailsPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -9,7 +11,8 @@ const DetailsPage = () => {
   const [searchParams] = useSearchParams();
   const [item, setItem] = useState<ItemProps | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-
+  const boxRef = useRef(null);
+  const isboxOutsideClick = useOutsideClick(boxRef);
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
@@ -39,16 +42,25 @@ const DetailsPage = () => {
     };
     fetchData();
   }, [id]);
-  if (isLoading) return <div>Loading...</div>;
   const handleClose = () => {
     navigate(`/?${searchParams.toString()}`);
   };
 
+  useEffect(() => {
+    if (isboxOutsideClick) handleClose();
+  }, [isboxOutsideClick]);
+  if (isLoading) return <div>Loading...</div>;
+
   return (
-    <div className="flex gap-3 flex-col items-start">
-      <button onClick={handleClose} className="cursor-pointer">
-        Close
-      </button>
+    <div
+      ref={boxRef}
+      className="flex gap-3 flex-col items-start h-full p-3 shadow-[-15px_0_15px_-15px_rgba(0,0,0,0.5)]"
+    >
+      <ButtonComponent
+        text="✕ Close"
+        componentStyle=""
+        handleClick={handleClose}
+      />
       {item && <Card item={item} isShowCharacter={true} />}
     </div>
   );

@@ -49,4 +49,23 @@ describe('Card component', () => {
     const cardEl = screen.getByText(userData.name);
     await user.click(cardEl);
   });
+  it('renders checkbox when isShowCharacter is false (default)', () => {
+    render(
+      <MemoryRouter>
+        <Card item={userData} isShowCharacter={false} />
+      </MemoryRouter>
+    );
+    const checkbox = screen.getByRole('checkbox');
+    expect(checkbox).toBeInTheDocument();
+  });
+  it('renders character details and hides checkbox when isShowCharacter = true', () => {
+    render(
+      <MemoryRouter>
+        <Card item={userData} isShowCharacter={true} />
+      </MemoryRouter>
+    );
+    expect(screen.getByText(/Mass:/i)).toBeInTheDocument();
+    const checkbox = screen.queryByRole('checkbox');
+    expect(checkbox).not.toBeInTheDocument();
+  });
 });
