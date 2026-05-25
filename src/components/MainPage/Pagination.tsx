@@ -6,7 +6,7 @@ const Pagination = ({
   onPageChange,
 }: PaginationProps) => {
   return (
-    <div className="flex justify-center items-center gap-3">
+    <div className="flex justify-center text-black dark:text-white items-center gap-3">
       <button
         className="cursor-pointer"
         disabled={currentPage === 1}

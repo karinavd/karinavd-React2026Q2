@@ -21,7 +21,7 @@ export const Search = ({ onSearch, isLoading }: PropsSearch) => {
   return (
     <form onSubmit={handleForm} className="flex gap-3">
       <input
-        className="bg-white text-black rounded-[5px] pl-2 h-7"
+        className="bg-white text-black border-2 rounded-[5px] pl-2 h-7"
         type="text"
         value={searchTerm}
         onChange={handleInput}
@@ -30,7 +30,7 @@ export const Search = ({ onSearch, isLoading }: PropsSearch) => {
       />
       <button
         type="submit"
-        className="bg-white min-w-20 cursor-pointer rounded-[5px] text-black"
+        className="bg-white min-w-20 cursor-pointer border-2 rounded-[5px] text-black"
         disabled={isLoading}
       >
         {isLoading ? 'Wait' : 'Search'}

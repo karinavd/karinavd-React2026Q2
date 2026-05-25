@@ -6,6 +6,7 @@ import { Outlet, useSearchParams } from 'react-router-dom';
 import { fetchDataCharacters } from '../../fetchData';
 import Header from './Header';
 import Pagination from './Pagination';
+import Flyout from '../Flyout';
 
 export const MainPage = () => {
   const [items, setItems] = useState<ItemProps[]>([]);
@@ -64,31 +65,35 @@ export const MainPage = () => {
   }
 
   return (
-    <div className="bg-[#131212] min-h-screen w-full text-white">
+    <div className=" dark:bg-[#131212] min-h-screen w-full text-white">
       <Header
         handleSearch={handleSearch}
         isLoading={isLoading}
         triggerErr={triggerErr}
       />
-      <main className="overflow-y-auto min-h-[calc(100vh-140px)]  flex w-full p-3">
-        <section className="w-[80%] p-4">
-          <CardList
-            items={paginatetedItems}
-            isLoading={isLoading}
-            error={error}
+      <main className="overflow-y-auto min-h-[calc(100vh-150px)]  flex flex-col w-full p-3">
+        <div className="flex">
+          <section className="w-[80%] p-4">
+            <CardList
+              items={paginatetedItems}
+              isLoading={isLoading}
+              error={error}
+            />
+          </section>
+          <section className="w-[20%]">
+            <Outlet />
+          </section>
+        </div>
+        {!isLoading && items.length > 0 && (
+          <Pagination
+            currentPage={Number(currPage)}
+            totalPages={totalPages}
+            onPageChange={handlePage}
           />
-        </section>
-        <section className="w-[20%]">
-          <Outlet />
-        </section>
+        )}
       </main>
-      {!isLoading && items.length > 0 && (
-        <Pagination
-          currentPage={Number(currPage)}
-          totalPages={totalPages}
-          onPageChange={handlePage}
-        />
-      )}
+
+      <Flyout />
     </div>
   );
 };

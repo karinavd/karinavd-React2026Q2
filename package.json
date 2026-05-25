@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://karinavd.github.io/karinavd-React2026Q2",
+  "homepage": "https://karinavd.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -22,7 +22,8 @@
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-router-dom": "^7.15.1",
-    "tailwindcss": "^4.2.4"
+    "tailwindcss": "^4.2.4",
+    "zustand": "^5.0.13"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",

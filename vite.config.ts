@@ -10,7 +10,7 @@ export default defineConfig({
     tailwindcss(),
     babel({ presets: [reactCompilerPreset()] }),
   ],
-  base:'/karinavd-React2026Q2/',
+  base: '/',
   test: {
     environment: 'jsdom',
     globals: true,
