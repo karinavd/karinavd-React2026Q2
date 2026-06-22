@@ -1,0 +1,27 @@
+{
+  "common": {
+    "search": "Search",
+    "about": "About",
+    "back": "Back",
+    "loading": "Loading...",
+    "error": "Error",
+    "notFound": "Page not found",
+    "home": "Home",
+    "language": "Language"
+  },
+  "search": {
+    "title": "Search Results",
+    "placeholder": "Enter search query...",
+    "noResults": "No results found",
+    "details": "Details"
+  },
+  "about": {
+    "title": "About",
+    "description": "Welcome to the search application"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page"
+  }
+}
