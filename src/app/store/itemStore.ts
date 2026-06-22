@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { ItemProps, ItemState } from '@/app/types';
+import type { ItemState } from '@/app/types';
 
 export const useItemStore = create<ItemState>((set) => ({
   selectedItems: [],
