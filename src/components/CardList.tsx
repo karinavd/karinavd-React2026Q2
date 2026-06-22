@@ -3,7 +3,7 @@ import { Card } from './Card';
 
 export const CardList = ({ items, isLoading, error }: CardListProps) => {
   if (error) return <div>Error: {error}</div>;
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading && items.length === 0) return <div>Loading...</div>;
   if (items.length === 0) return <div>Not found</div>;
 
   return (

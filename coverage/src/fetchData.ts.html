@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>0/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>0/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>0/7</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -92,19 +92,19 @@
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -119,19 +119,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import type { ItemProps } from './interfaces/ItemProps';
 &nbsp;
-export const fetchDataCharacters = async (
+export const fetchDataCharacters = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >async (</span></span>
   item: string
 ): Promise&lt;ItemProps[]&gt; =&gt; {
-  await new Promise((resolve) =&gt; setTimeout(resolve, 500));
-  const res = await fetch(`https://swapi.info/api/people`).then((res) =&gt;
-    res.json()
+<span class="cstat-no" title="statement not covered" >  await new <span class="fstat-no" title="function not covered" >Promise((r</span>esolve) =&gt; <span class="cstat-no" title="statement not covered" >setTimeout(resolve, 500))</span>;</span>
+  const res = <span class="cstat-no" title="statement not covered" >await fetch(`https://swapi.info/api/people`).<span class="fstat-no" title="function not covered" >then((r</span>es) =&gt;</span>
+<span class="cstat-no" title="statement not covered" >    res.json()</span>
   );
-  const filteredCharacters = item
-    ? res.filter((char: ItemProps) =&gt;
-        char.name.toLowerCase().includes(item.toLowerCase())
+  const filteredCharacters = <span class="cstat-no" title="statement not covered" >item</span>
+    ? res.<span class="fstat-no" title="function not covered" >filter((c</span>har: ItemProps) =&gt;
+<span class="cstat-no" title="statement not covered" >        char.name.toLowerCase().includes(item.toLowerCase())</span>
       )
     : res;
-  return filteredCharacters.map((character: ItemProps) =&gt; ({
+<span class="cstat-no" title="statement not covered" >  return filteredCharacters.<span class="fstat-no" title="function not covered" >map((c</span>haracter: ItemProps) =&gt; (<span class="cstat-no" title="statement not covered" >{</span></span>
     id: character.name,
     name: character.name,
     height: character.height,
@@ -151,7 +151,7 @@ export const fetchDataCharacters = async (
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-05-25T18:18:24.055Z
+                at 2026-06-22T17:50:22.484Z
             </div>
         <script src="../prettify.js"></script>
         <script>
