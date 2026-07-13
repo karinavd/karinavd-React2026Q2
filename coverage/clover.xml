@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1782150622553" clover="3.2.0">
+  <project timestamp="1782150622553" name="All files">
+    <metrics statements="312" coveredstatements="272" conditionals="340" coveredconditionals="273" methods="78" coveredmethods="55" elements="730" coveredelements="600" complexity="0" loc="312" ncloc="312" packages="5" files="22" classes="22"/>
+    <package name="src">
+      <metrics statements="54" coveredstatements="37" conditionals="26" coveredconditionals="15" methods="24" coveredmethods="12"/>
+      <file name="App.tsx" path="D:\karinavd-React2026Q2\src\App.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="8" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="7" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="8" type="stmt"/>
+        <line num="11" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="8" type="stmt"/>
+      </file>
+      <file name="OutSideClick.tsx" path="D:\karinavd-React2026Q2\src\OutSideClick.tsx">
+        <metrics statements="11" coveredstatements="10" conditionals="8" coveredconditionals="6" methods="4" coveredmethods="4"/>
+        <line num="3" count="11" type="stmt"/>
+        <line num="6" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="22" count="11" type="stmt"/>
+      </file>
+      <file name="ThemeContext.ts" path="D:\karinavd-React2026Q2\src\ThemeContext.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+      <file name="fetchData.ts" path="D:\karinavd-React2026Q2\src\fetchData.ts">
+        <metrics statements="7" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+      </file>
+      <file name="useItemStore.tsx" path="D:\karinavd-React2026Q2\src\useItemStore.tsx">
+        <metrics statements="7" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="1"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+      </file>
+      <file name="useLocalStorage.ts" path="D:\karinavd-React2026Q2\src\useLocalStorage.ts">
+        <metrics statements="22" coveredstatements="18" conditionals="6" coveredconditionals="5" methods="6" coveredmethods="6"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="7" count="63" type="stmt"/>
+        <line num="8" count="27" type="stmt"/>
+        <line num="9" count="27" type="stmt"/>
+        <line num="10" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="63" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="33" count="63" type="stmt"/>
+        <line num="34" count="27" type="stmt"/>
+        <line num="35" count="7" type="cond" truecount="3" falsecount="1"/>
+        <line num="36" count="7" type="stmt"/>
+        <line num="37" count="7" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="44" count="27" type="stmt"/>
+        <line num="45" count="27" type="stmt"/>
+        <line num="48" count="63" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="143" coveredstatements="126" conditionals="163" coveredconditionals="128" methods="30" coveredmethods="24"/>
+      <file name="About.tsx" path="D:\karinavd-React2026Q2\src\components\About.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="12" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="1" type="stmt"/>
+      </file>
+      <file name="Back.tsx" path="D:\karinavd-React2026Q2\src\components\Back.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="3" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+      </file>
+      <file name="Card.tsx" path="D:\karinavd-React2026Q2\src\components\Card.tsx">
+        <metrics statements="22" coveredstatements="21" conditionals="54" coveredconditionals="51" methods="5" coveredmethods="2"/>
+        <line num="5" count="22" type="cond" truecount="1" falsecount="1"/>
+        <line num="6" count="22" type="stmt"/>
+        <line num="7" count="22" type="stmt"/>
+        <line num="8" count="22" type="cond" truecount="5" falsecount="1"/>
+        <line num="9" count="22" type="cond" truecount="6" falsecount="0"/>
+        <line num="10" count="22" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="16" count="20" type="stmt"/>
+        <line num="17" count="22" type="cond" truecount="4" falsecount="0"/>
+        <line num="20" count="19" type="stmt"/>
+        <line num="21" count="22" type="cond" truecount="6" falsecount="0"/>
+        <line num="22" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="22" type="cond" truecount="4" falsecount="0"/>
+        <line num="31" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="22" type="cond" truecount="8" falsecount="0"/>
+        <line num="34" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="22" type="cond" truecount="8" falsecount="0"/>
+        <line num="43" count="22" type="stmt"/>
+      </file>
+      <file name="CardList.tsx" path="D:\karinavd-React2026Q2\src\components\CardList.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="18" coveredconditionals="14" methods="2" coveredmethods="2"/>
+        <line num="4" count="21" type="stmt"/>
+        <line num="5" count="21" type="cond" truecount="3" falsecount="1"/>
+        <line num="6" count="19" type="cond" truecount="6" falsecount="0"/>
+        <line num="7" count="9" type="cond" truecount="4" falsecount="2"/>
+        <line num="10" count="8" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="13" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="8" type="stmt"/>
+      </file>
+      <file name="DetailsPage.tsx" path="D:\karinavd-React2026Q2\src\components\DetailsPage.tsx">
+        <metrics statements="19" coveredstatements="18" conditionals="12" coveredconditionals="10" methods="4" coveredmethods="3"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="13" count="11" type="stmt"/>
+        <line num="14" count="11" type="stmt"/>
+        <line num="15" count="11" type="stmt"/>
+        <line num="16" count="11" type="stmt"/>
+        <line num="18" count="11" type="stmt"/>
+        <line num="19" count="11" type="stmt"/>
+        <line num="21" count="11" type="stmt"/>
+        <line num="22" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="11" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="29" count="11" type="stmt"/>
+        <line num="30" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="35" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="50" count="6" type="stmt"/>
+      </file>
+      <file name="ErrorBoundary.tsx" path="D:\karinavd-React2026Q2\src\components\ErrorBoundary.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="20" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+      </file>
+      <file name="Flyout.tsx" path="D:\karinavd-React2026Q2\src\components\Flyout.tsx">
+        <metrics statements="31" coveredstatements="16" conditionals="16" coveredconditionals="8" methods="3" coveredmethods="1"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="32" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="34" count="8" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
+        <line num="37" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="8" type="stmt"/>
+        <line num="39" count="8" type="stmt"/>
+        <line num="43" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="44" count="8" type="stmt"/>
+        <line num="48" count="8" type="cond" truecount="2" falsecount="2"/>
+        <line num="49" count="8" type="cond" truecount="2" falsecount="2"/>
+        <line num="50" count="8" type="stmt"/>
+      </file>
+      <file name="FlyoutButton.tsx" path="D:\karinavd-React2026Q2\src\components\FlyoutButton.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="3" count="43" type="stmt"/>
+        <line num="9" count="43" type="stmt"/>
+        <line num="11" count="43" type="cond" truecount="4" falsecount="1"/>
+        <line num="15" count="43" type="stmt"/>
+      </file>
+      <file name="NotFound.tsx" path="D:\karinavd-React2026Q2\src\components\NotFound.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="Search.tsx" path="D:\karinavd-React2026Q2\src\components\Search.tsx">
+        <metrics statements="20" coveredstatements="20" conditionals="22" coveredconditionals="18" methods="3" coveredmethods="3"/>
+        <line num="5" count="41" type="stmt"/>
+        <line num="6" count="41" type="stmt"/>
+        <line num="10" count="41" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="41" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
+        <line num="13" count="41" type="cond" truecount="4" falsecount="1"/>
+        <line num="14" count="41" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="20" count="41" type="cond" truecount="4" falsecount="0"/>
+        <line num="22" count="41" type="stmt"/>
+        <line num="23" count="36" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="31" count="28" type="stmt"/>
+        <line num="36" count="41" type="cond" truecount="6" falsecount="0"/>
+        <line num="37" count="41" type="cond" truecount="2" falsecount="3"/>
+        <line num="38" count="41" type="stmt"/>
+      </file>
+      <file name="ThemeProvider.tsx" path="D:\karinavd-React2026Q2\src\components\ThemeProvider.tsx">
+        <metrics statements="14" coveredstatements="14" conditionals="16" coveredconditionals="12" methods="4" coveredmethods="4"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="3" type="cond" truecount="2" falsecount="2"/>
+        <line num="21" count="3" type="cond" truecount="3" falsecount="1"/>
+        <line num="23" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.MainPage">
+      <metrics statements="77" coveredstatements="72" conditionals="126" coveredconditionals="110" methods="9" coveredmethods="5"/>
+      <file name="Header.tsx" path="D:\karinavd-React2026Q2\src\components\MainPage\Header.tsx">
+        <metrics statements="15" coveredstatements="15" conditionals="24" coveredconditionals="23" methods="1" coveredmethods="1"/>
+        <line num="8" count="21" type="stmt"/>
+        <line num="9" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="21" type="stmt"/>
+        <line num="12" count="21" type="cond" truecount="4" falsecount="0"/>
+        <line num="13" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="11" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="17" count="11" type="stmt"/>
+        <line num="18" count="11" type="stmt"/>
+        <line num="20" count="21" type="cond" truecount="6" falsecount="0"/>
+        <line num="22" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="10" type="stmt"/>
+        <line num="27" count="21" type="cond" truecount="4" falsecount="0"/>
+        <line num="28" count="21" type="cond" truecount="3" falsecount="1"/>
+        <line num="29" count="21" type="stmt"/>
+      </file>
+      <file name="MainPage.tsx" path="D:\karinavd-React2026Q2\src\components\MainPage\MainPage.tsx">
+        <metrics statements="49" coveredstatements="45" conditionals="77" coveredconditionals="75" methods="5" coveredmethods="3"/>
+        <line num="13" count="22" type="stmt"/>
+        <line num="14" count="22" type="stmt"/>
+        <line num="15" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="22" type="stmt"/>
+        <line num="24" count="22" type="stmt"/>
+        <line num="26" count="22" type="cond" truecount="4" falsecount="0"/>
+        <line num="27" count="22" type="stmt"/>
+        <line num="30" count="22" type="cond" truecount="4" falsecount="0"/>
+        <line num="32" count="22" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="22" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="22" type="cond" truecount="4" falsecount="0"/>
+        <line num="41" count="22" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="22" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="14" type="stmt"/>
+        <line num="50" count="22" type="cond" truecount="1" falsecount="1"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="56" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="22" type="cond" truecount="6" falsecount="0"/>
+        <line num="59" count="22" type="stmt"/>
+        <line num="60" count="18" type="stmt"/>
+        <line num="64" count="4" type="stmt"/>
+        <line num="65" count="21" type="stmt"/>
+        <line num="66" count="21" type="stmt"/>
+        <line num="72" count="22" type="cond" truecount="7" falsecount="0"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="75" count="21" type="stmt"/>
+        <line num="77" count="22" type="cond" truecount="7" falsecount="0"/>
+        <line num="78" count="17" type="stmt"/>
+        <line num="82" count="22" type="cond" truecount="4" falsecount="0"/>
+        <line num="83" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="84" count="8" type="stmt"/>
+        <line num="86" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="87" count="22" type="cond" truecount="7" falsecount="0"/>
+        <line num="88" count="18" type="cond" truecount="3" falsecount="0"/>
+        <line num="94" count="22" type="cond" truecount="5" falsecount="0"/>
+        <line num="95" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="97" count="22" type="cond" truecount="3" falsecount="1"/>
+        <line num="98" count="22" type="stmt"/>
+      </file>
+      <file name="Pagination.tsx" path="D:\karinavd-React2026Q2\src\components\MainPage\Pagination.tsx">
+        <metrics statements="13" coveredstatements="12" conditionals="25" coveredconditionals="12" methods="3" coveredmethods="1"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="12" count="7" type="cond" truecount="2" falsecount="2"/>
+        <line num="13" count="7" type="cond" truecount="2" falsecount="2"/>
+        <line num="16" count="7" type="cond" truecount="2" falsecount="2"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="22" count="7" type="cond" truecount="2" falsecount="2"/>
+        <line num="23" count="7" type="cond" truecount="2" falsecount="2"/>
+        <line num="26" count="7" type="cond" truecount="2" falsecount="3"/>
+        <line num="27" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.hooks">
+      <metrics statements="36" coveredstatements="35" conditionals="23" coveredconditionals="19" methods="15" coveredmethods="14"/>
+      <file name="useCharactersQuery.ts" path="D:\karinavd-React2026Q2\src\hooks\useCharactersQuery.ts">
+        <metrics statements="36" coveredstatements="35" conditionals="23" coveredconditionals="19" methods="15" coveredmethods="14"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="18" type="stmt"/>
+        <line num="6" count="18" type="stmt"/>
+        <line num="7" count="14" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="14" type="stmt"/>
+        <line num="11" count="24" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="29" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="35" count="22" type="cond" truecount="3" falsecount="1"/>
+        <line num="36" count="9" type="stmt"/>
+        <line num="39" count="12" type="stmt"/>
+        <line num="42" count="22" type="stmt"/>
+        <line num="45" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
+        <line num="49" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="50" count="6" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="53" count="7" type="stmt"/>
+        <line num="54" count="11" type="cond" truecount="5" falsecount="0"/>
+        <line num="55" count="11" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="62" count="22" type="stmt"/>
+        <line num="63" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="64" count="8" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="69" count="22" type="stmt"/>
+        <line num="72" count="11" type="stmt"/>
+        <line num="73" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="74" count="4" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="76" count="11" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.lib">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
+      <file name="queryClient.ts" path="D:\karinavd-React2026Q2\src\lib\queryClient.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
+        <line num="3" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
